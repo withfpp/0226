@@ -3,17 +3,16 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
-#gem 'rails_12factor', group: :production
-# Use sqlite3 as the database for Active Record
 
+# Use sqlite3 as the database for Active Record
 gem 'devise'
 
 group :production do
-  gem 'pg'
-end     
+	gem 'pg'
+end
 
-group :development, :test do
-  gem 'sqlite3'
+group :development , :test do
+	gem 'sqlite3'
 end
 
 # Use SCSS for stylesheets
@@ -43,10 +42,10 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
-gem 'unicorn'
+# gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development

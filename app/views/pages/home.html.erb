@@ -1,0 +1,13 @@
+<% if user_signed_in? %>
+# show them something
+<% else %>
+
+<div class="jumbotron">
+        <h1>Welcome to my Rails app </h1>
+        <p>You've found the home page for the TK applacation</p>
+        <p>
+			<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+        </p>
+</div>
+
+<% end %>

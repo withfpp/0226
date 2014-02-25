@@ -18,6 +18,13 @@ test:
   pool: 5
   timeout: 5000
 
+  # development:
+  #   adapter: postgresql
+  #   encoding: unicode
+  #   database: myapp_development
+  #   pool: 5
+  #   password:
+
 production:
   adapter: sqlite3
   database: db/production.sqlite3
